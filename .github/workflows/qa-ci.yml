@@ -1,11 +1,13 @@
-````yaml
+```yaml
 name: Bell Pepper Monitor QA Pipeline
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -62,27 +64,4 @@ jobs:
           name: cucumber-test-reports
           path: reports/
           if-no-files-found: warn
-
-:::
-
-### මේ වෙනස්කම්වලින් වෙන්නේ මොනවාද?
-
-- **Install Playwright Chromium:** GitHub runner එකට browser එක install කරනවා.
-- **Start Vite server:** Application එක background එකේ start කරනවා.
-- **Wait for application:** Application එක ready වෙනකම් උපරිම තත්පර 60ක් බලා සිටිනවා.
-- **Run Cucumber tests:** Application එක ක්‍රියාත්මක වන අතරතුර tests run කරනවා.
-- **Upload Cucumber reports:** Tests fail වුණත් report files තිබෙනවා නම් ඒවා GitHub Actions artifacts ලෙස upload කරනවා.
-
-## ⚠️ තවම `git push` කරන්න එපා
-
-මේ workflow එකේ server setup එක එකතු කළාට පස්සේත් tests සාර්ථක වේවි කියලා සහතික වෙන්න බැහැ. විශේෂයෙන් ඔයාගේ test file එකේ අවසානයේ deliberately failing test එකක් තියෙනවා:
-
-```javascript
-Then('a deliberately failing test should fail', async function () {
-  assert.equal(true, false, 'Intentional failure to test screenshot capture');
-});
-````
-
-ඒ වගේම application එකේ login page එකට යන URL එක සහ browser setup එකත් verify කළ යුතුයි.
-
-**දැනට workflow file එක save කරන්න. ඊට පස්සේ `git status` output එක එවන්න.** එතැනින් repository එකට ආරක්ෂිතව upload කරන පියවරට යමු.
+```
