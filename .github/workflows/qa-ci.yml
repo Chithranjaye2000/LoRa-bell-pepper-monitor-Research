@@ -1,0 +1,88 @@
+````yaml
+name: Bell Pepper Monitor QA Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run lint checks
+        run: npm run lint
+
+      - name: Build application
+        run: npm run build
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Start Vite development server
+        run: |
+          npm run dev -- --host 127.0.0.1 > vite.log 2>&1 &
+          echo $! > vite.pid
+
+      - name: Wait for application to start
+        run: |
+          for i in {1..30}; do
+            if curl --fail http://127.0.0.1:5173/login; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat vite.log
+          exit 1
+
+      - name: Run Cucumber tests
+        run: npm test
+        env:
+          BASE_URL: http://127.0.0.1:5173/
+
+      - name: Upload Cucumber reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-test-reports
+          path: reports/
+          if-no-files-found: warn
+
+:::
+
+### මේ වෙනස්කම්වලින් වෙන්නේ මොනවාද?
+
+- **Install Playwright Chromium:** GitHub runner එකට browser එක install කරනවා.
+- **Start Vite server:** Application එක background එකේ start කරනවා.
+- **Wait for application:** Application එක ready වෙනකම් උපරිම තත්පර 60ක් බලා සිටිනවා.
+- **Run Cucumber tests:** Application එක ක්‍රියාත්මක වන අතරතුර tests run කරනවා.
+- **Upload Cucumber reports:** Tests fail වුණත් report files තිබෙනවා නම් ඒවා GitHub Actions artifacts ලෙස upload කරනවා.
+
+## ⚠️ තවම `git push` කරන්න එපා
+
+මේ workflow එකේ server setup එක එකතු කළාට පස්සේත් tests සාර්ථක වේවි කියලා සහතික වෙන්න බැහැ. විශේෂයෙන් ඔයාගේ test file එකේ අවසානයේ deliberately failing test එකක් තියෙනවා:
+
+```javascript
+Then('a deliberately failing test should fail', async function () {
+  assert.equal(true, false, 'Intentional failure to test screenshot capture');
+});
+````
+
+ඒ වගේම application එකේ login page එකට යන URL එක සහ browser setup එකත් verify කළ යුතුයි.
+
+**දැනට workflow file එක save කරන්න. ඊට පස්සේ `git status` output එක එවන්න.** එතැනින් repository එකට ආරක්ෂිතව upload කරන පියවරට යමු.

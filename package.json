@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "pretest": "node --input-type=module -e \"import { mkdirSync } from 'node:fs'; mkdirSync('reports', { recursive: true });\"",
+    "test": "cucumber-js",
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
@@ -20,6 +22,8 @@
     "three": "^0.185.1"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.64.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",

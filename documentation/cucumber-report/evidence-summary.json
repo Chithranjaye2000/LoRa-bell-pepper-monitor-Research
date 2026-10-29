@@ -1,0 +1,431 @@
+{
+  "inspectionDate": "2026-10-21",
+  "evidenceBasis": "Existing saved Cucumber HTML messages; no new browser execution performed",
+  "runId": "26a3a3a3-288e-4fb5-9ce2-687ae35b1806",
+  "startUTC": "2026-10-20T17:27:16.515Z",
+  "finishUTC": "2026-10-20T17:28:12.569Z",
+  "startColombo": "20/10/2026, 22:57:16",
+  "finishColombo": "20/10/2026, 22:58:12",
+  "elapsedSeconds": 56.054,
+  "success": false,
+  "meta": {
+    "protocolVersion": "34.2.1",
+    "implementation": {
+      "version": "13.3.0",
+      "name": "cucumber-js"
+    },
+    "cpu": {
+      "name": "x64"
+    },
+    "os": {
+      "name": "win32",
+      "version": "10.0.26220"
+    },
+    "runtime": {
+      "name": "node.js",
+      "version": "22.15.0"
+    }
+  },
+  "featureSourceMatches": true,
+  "scenarios": [
+    {
+      "name": "Open the monitoring application",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 6,
+            "nanos": 715599399
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 103299100
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 625893000
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 10.451,
+      "stepCounts": {
+        "PASSED": 2
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Login with valid details",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 3,
+            "nanos": 161777900
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 1,
+            "nanos": 503738100
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 834587700
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 5702699
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 306809399
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 8.818,
+      "stepCounts": {
+        "PASSED": 4
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Login with invalid email format",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 2,
+            "nanos": 727798399
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 1,
+            "nanos": 496120999
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 752279300
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 88015899
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 272142299
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 8.346,
+      "stepCounts": {
+        "PASSED": 4
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Empty Login Form Validation",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 2,
+            "nanos": 803853899
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 1,
+            "nanos": 471431499
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 761061699
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 74911699
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 57962599
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 621766000
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 8.834,
+      "stepCounts": {
+        "PASSED": 5
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Password Field Masking",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 2,
+            "nanos": 720383699
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 36426999
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 370753899
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 6.13,
+      "stepCounts": {
+        "PASSED": 2
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Login Button Verification",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 2,
+            "nanos": 646358399
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 40152699
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 3,
+            "nanos": 391619999
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "PASSED",
+      "elapsedSeconds": 6.079,
+      "stepCounts": {
+        "PASSED": 2
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    },
+    {
+      "name": "Temporary test to verify failure screenshot",
+      "attempt": 0,
+      "steps": [
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 3,
+            "nanos": 292600
+          },
+          "status": "PASSED"
+        },
+        {
+          "kind": "gherkin",
+          "duration": {
+            "seconds": 0,
+            "nanos": 1518100
+          },
+          "status": "FAILED",
+          "message": "AssertionError [ERR_ASSERTION]: Intentional failure to test screenshot capture\n\ntrue !== false\n\n    + expected - actual\n\n    -true\n    +false\n\n    at World.<anonymous> (file:///D:/3rd%20year/Semester%203.2/3.2/Research%20Methodology%20and%20Scientific%20Writing/Green%20House/dashbord%20repo/bell-pepper-monitor/tests/step-definitions/dashboard.steps.js:158:10)\n    at Object.run (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:24:27)\n    at D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:31:114\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)\n    at runInTestCaseScope (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\scope\\test_case_scope.js:9:26)\n    at Object.run (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:31:63)\n    at async TestCaseRunner.invokeStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:91:16)\n    at async TestCaseRunner.runStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:271:26)\n    at async D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:179:44\n    at async TestCaseRunner.aroundTestStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:119:32)",
+          "exception": {
+            "type": "AssertionError",
+            "message": "Intentional failure to test screenshot capture\n\ntrue !== false\n",
+            "stackTrace": "AssertionError [ERR_ASSERTION]: Intentional failure to test screenshot capture\n\ntrue !== false\n\n    + expected - actual\n\n    -true\n    +false\n\n    at World.<anonymous> (file:///D:/3rd%20year/Semester%203.2/3.2/Research%20Methodology%20and%20Scientific%20Writing/Green%20House/dashbord%20repo/bell-pepper-monitor/tests/step-definitions/dashboard.steps.js:158:10)\n    at Object.run (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\user_code_runner.js:24:27)\n    at D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:31:114\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)\n    at runInTestCaseScope (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\scope\\test_case_scope.js:9:26)\n    at Object.run (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\step_runner.js:31:63)\n    at async TestCaseRunner.invokeStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:91:16)\n    at async TestCaseRunner.runStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:271:26)\n    at async D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:179:44\n    at async TestCaseRunner.aroundTestStep (D:\\3rd year\\Semester 3.2\\3.2\\Research Methodology and Scientific Writing\\Green House\\dashbord repo\\bell-pepper-monitor\\node_modules\\@cucumber\\cucumber\\lib\\runtime\\test_case_runner.js:119:32)"
+          }
+        },
+        {
+          "kind": "hook",
+          "duration": {
+            "seconds": 4,
+            "nanos": 356098500
+          },
+          "status": "PASSED"
+        }
+      ],
+      "status": "FAILED",
+      "elapsedSeconds": 7.362,
+      "stepCounts": {
+        "PASSED": 1,
+        "FAILED": 1
+      },
+      "hookCounts": {
+        "PASSED": 1
+      }
+    }
+  ],
+  "scenarioCounts": {
+    "PASSED": 6,
+    "FAILED": 1
+  },
+  "gherkinStepCounts": {
+    "PASSED": 20,
+    "FAILED": 1
+  },
+  "hookCounts": {
+    "PASSED": 7
+  },
+  "screenshots": [
+    {
+      "mediaType": "image/png",
+      "contentEncoding": "BASE64",
+      "bytes": 33674,
+      "sha256": "a466256ee301e557bb33996e77a1a80f961b422ceeca76ddeb7e09cf0bb88db5",
+      "matchingFile": "reports/screenshots/Temporary-test-to-verify-failure-screenshot-1792517288213-2ef6c427.png"
+    }
+  ],
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "b094b00deec89ca13ae1f78c32c7e42e8c0e30481d24718c6b01fc3f9c1a08cf"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "22c5994eb85ea4fd30650f9b5f198f31961d5b964a65cd71bf7829d78454f312"
+    },
+    {
+      "path": "cucumber.cjs",
+      "sha256": "75b644e155e9c56009c7b57906b5468fe11605924eb96cc63423489eda26d924"
+    },
+    {
+      "path": "features/dashboard.feature",
+      "sha256": "070700720bdf96a9c22c8f834e45a45c80a0712c9189af117af04c21412a4847"
+    },
+    {
+      "path": "tests/step-definitions/dashboard.steps.js",
+      "sha256": "de18db80174852604b75d0f619c054982b95c7b2405ac11a95b3fc34beb0376a"
+    },
+    {
+      "path": "tests/helpers/login.helper.js",
+      "sha256": "b8c21c117c66bfbc2c8ccbd4fc43087a6a8585367d942ad00ad8c26c9f724d2b"
+    },
+    {
+      "path": "src/pages/Login.jsx",
+      "sha256": "e4c7399ebcdb199025d75c43fa9b481707d74e3db85af46ad9255bea9fdcf250"
+    },
+    {
+      "path": "src/context/AuthContext.jsx",
+      "sha256": "c53ff65b4c3208db5aa6219c8e4f75491b10e2477a017e95dfe7b214dc2686a3"
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "556ee1f17646c66ae38a8b93778ca00b571d0baf28b1a1f16adc946e79869bab"
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "379b170fdab1c92d6f017d8e39ee218897dd1835cd7cb519cd7461ba7f891fc6"
+    },
+    {
+      "path": "README.md",
+      "sha256": "32c146800559b12db0861fe0f4cc2c7e9f459e5fc947fb0ce8dfa6af4ea28a16"
+    },
+    {
+      "path": "reports/cucumber-report.html",
+      "sha256": "f52a4d09609983194cc65a643fdc89148a32ff7bb291cd2e92a28046f8154bc6"
+    }
+  ]
+}
