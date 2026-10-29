@@ -1,13 +1,10 @@
-```yaml
 name: Bell Pepper Monitor QA Pipeline
 
-on:
+"on":
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -44,7 +41,7 @@ jobs:
       - name: Wait for application to start
         run: |
           for i in {1..30}; do
-            if curl --fail http://127.0.0.1:5173/login; then
+            if curl --fail http://127.0.0.1:5173/login -o /dev/null; then
               exit 0
             fi
             sleep 2
@@ -64,4 +61,3 @@ jobs:
           name: cucumber-test-reports
           path: reports/
           if-no-files-found: warn
-```
