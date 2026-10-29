@@ -32,6 +32,4 @@ Feature: Bell Pepper Monitor Login
     Given the user opens the monitoring application
     Then the login button should be visible and enabled
 
-  Scenario: Temporary test to verify failure screenshot
-    Given the user opens the monitoring application
-    Then a deliberately failing test should fail
+  
