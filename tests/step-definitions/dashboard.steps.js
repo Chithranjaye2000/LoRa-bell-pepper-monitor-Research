@@ -24,10 +24,10 @@ const dashboardURL = new URL('/', baseURL).href;
 
 Given('the user opens the monitoring application', async function () {
   // Cucumber gives each scenario its own World (this), keeping browser state separate.
-  this.browser = await chromium.launch({
-    headless: false,
-    slowMo: 700
-  });
+this.browser = await chromium.launch({
+  headless: process.env.CI ? true : false,
+  slowMo: process.env.CI ? 0 : 700
+});
   this.page = await this.browser.newPage();
   await this.page.goto(loginURL);
 });
@@ -153,11 +153,4 @@ After(async function ({ result, pickle }) {
     this.page = undefined;
   }
 });
-// Temporary test — keep this OUTSIDE the After hook
-Then('a deliberately failing test should fail', async function () {
-  assert.equal(
-    true,
-    false,
-    'Intentional failure to test screenshot capture'
-  );
-});
+
